@@ -1,6 +1,12 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --primary-font: "Raleway", sans-serif;
+}
+
 body {
+  font-family: var(--main-font);
   max-width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Raleway" sans-serif;
   color: #212121;
 }
 
@@ -23,25 +29,18 @@ ul {
 .menu-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
 }
 .contact-info {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14px;
   letter-spacing: 0.02em;
 
   color: #757575;
 }
-
-/* .social-links a {
-    color: blue;
-    text-decoration: none;
-  } */
 
 /* unvisited link */
 a:link {
@@ -60,8 +59,7 @@ a:focus {
   text-decoration: none;
 }
 
-h1 {
-  font-family: "Roboto";
+.slogan {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -86,7 +84,6 @@ h1 {
 }
 
 button {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -118,8 +115,8 @@ button {
   transition: 0.7s;
 } */
 
+.blue-button:hover,
 .blue-button:hover {
-  background-color: #0d3251;
   transition: 0.7s;
 }
 
@@ -169,37 +166,28 @@ button {
   flex-wrap: wrap;
 }
 
-h2 {
-  font-family: "Roboto";
+.section-title {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: #212121;
 }
 
-h3 {
-  font-family: "Roboto";
+.paragraph-title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: #212121;
 }
 
 .paragraphs {
   display: flex;
 }
-p {
-  font-family: "Roboto";
-  /* font-style: normal;
-  font-weight: 400; */
+.paragraph-text {
   font-size: 14px;
   line-height: 1.71;
 
@@ -214,6 +202,7 @@ p {
 
 footer {
   background-color: #2f303a;
+  font-family: "Roboto";
 }
 
 .footer-items a {
