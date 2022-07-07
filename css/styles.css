@@ -37,6 +37,7 @@ ul {
 }
 .nav-items {
   display: flex;
+  color: var(--normal-text-color);
 }
 
 .logo {
