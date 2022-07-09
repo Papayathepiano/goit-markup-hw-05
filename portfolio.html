@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio Homework Project</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -18,46 +22,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
+    
   </head>
-  <body>
-    <header>
-      <div>
-        <nav>
-          <a href="index.html" class="logo">Webstudio</a>
-          <ul>
-            <li><a href="#" class="menu-item">Agencja</a></li>
-            <li><a href="#" class="menu-item">Portfolio</a></li>
-            <li><a href="#" class="menu-item">Kontakty</a></li>
+  <body class="position">
+    <header class="nav-bar">
+      <div class="menu-items">
+        <div>
+          <nav class="menu-items">
+            <div class="logo-position">
+              <a href="index.html" class="logo">Webstudio</a>
+            </div>
+            <div class="social-links-position">
+              <ul class="nav-items">
+                <li class="nav-1"><a href="#" class="menu-item">Agencja</a></li>
+                <li class="nav-2">
+                  <a href="portfolio.html" class="menu-item">Portfolio</a>
+                </li>
+                <li><a href="#" class="menu-item">Kontakt</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="contacts-position">
+          <ul class="menu-items">
+            <li class="nav-3">
+              <a href="mailto:info@devstudio.com" class="contact-info"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="contact-info"
+                >+38 096 111 11 11</a
+              >
+            </li>
           </ul>
-        </nav>
-        <ul>
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact-info"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="+48111111111" class="contact-info">+48 111 111 111</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
-    <div class="button-box">
-      <ul class="button-container">
-        <li><button type="button" class="button">Wszystkie</button></li>
-        <li><button type="button" class="button">Strony</button></li>
-        <li><button type="button" class="button">Aplikacje</button></li>
-        <li><button type="button" class="button">Dizajn</button></li>
-        <li><button type="button" class="button">Marketing</button></li>
-      </ul>
-    </div>
-    <main>
-      <div class="image-box-container">
+    <main class="card-container">
+      <div class="button-box">
+        <ul class="button-container">
+          <li><button type="button" class="button">Wszystkie</button></li>
+          <li><button type="button" class="button">Strony</button></li>
+          <li><button type="button" class="button">Aplikacje</button></li>
+          <li><button type="button" class="button">Dizajn</button></li>
+          <li><button type="button" class="button">Marketing</button></li>
+        </ul>
+      </div>
+
+      <section class="image-box-container">
         <ul class="image-box">
           <li>
             <div>
@@ -180,7 +194,7 @@
                   src="images/person-typing-1.jpg"
                   width="370"
                   height="294"
-                  alt=""
+                  alt="person typing"
                 />
                 <figcaption><b>Growing Business</b> <br />Aplikacja</figcaption>
               </figure>
@@ -203,7 +217,7 @@
             <a href="+48111111111 ">+48 111 111 111</a>
           </li>
         </ul>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
