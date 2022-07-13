@@ -21,7 +21,7 @@
     />
   </head>
   <body class="position">
-    <header class="nav-bar">
+    <!-- <header class="nav-bar">
       <div class="menu-items">
         <div>
           <nav class="menu-items">
@@ -54,7 +54,34 @@
           </ul>
         </div>
       </div>
+    </header> -->
+    <header class="nav-bar">
+      <div class="menu-items">
+        <a class="logo-position logo" href="index.html">Webstudio</a>
+        <nav class="menu-items social-links-position">
+          <ul class="nav-items">
+            <li class="nav-1"><a href="#" class="menu-item">Agencja</a></li>
+            <li class="nav-2">
+              <a href="portfolio.html" class="menu-item">Portfolio</a>
+            </li>
+            <li><a href="#" class="menu-item">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="menu-items contacts-position">
+          <li class="nav-3">
+            <a href="mailto:info@devstudio.com" class="contact-info"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="contact-info"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
+
     <main>
       <div class="main-section">
         <div>
@@ -68,46 +95,50 @@
         </button>
       </div>
 
-      <ul class="paragraphs">
-        <li>
-          <div>
-            <h3 class="paragraph-title">LOREM IPSUM</h3>
-            <p class="paragraph-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3 class="paragraph-title">LOREM IPSUM</h3>
-            <p class="paragraph-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3 class="paragraph-title">LOREM IPSUM</h3>
-            <p class="paragraph-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3 class="paragraph-title">LOREM IPSUM</h3>
-            <p class="paragraph-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </div>
-        </li>
-      </ul>
+      <section>
+        <div class="container">
+          <ul class="paragraphs">
+            <li>
+              <div>
+                <h3 class="paragraph-title">LOREM IPSUM</h3>
+                <p class="paragraph-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="paragraph-title">LOREM IPSUM</h3>
+                <p class="paragraph-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="paragraph-title">LOREM IPSUM</h3>
+                <p class="paragraph-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="paragraph-title">LOREM IPSUM</h3>
+                <p class="paragraph-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-      <div>
+      <div class="container">
         <h2 class="section-title">Czym się zajmujemy</h2>
         <ul class="pics-container">
           <li>
@@ -137,12 +168,12 @@
         </ul>
       </div>
 
-      <div class="our-team">
-        <h2 class="section-title">Nasz zesp&#243;&#322;</h2>
-        <ul class="team-container">
-          <li>
-            <div class="team-photo">
-              <figure>
+      <section class="my-team">
+        <div class="container">
+          <h2 class="section-title">Nasz zesp&#243;&#322;</h2>
+          <ul class="team-container">
+            <li class="pic-item">
+              <figure class="picture">
                 <img
                   src="images/team-photo-1.jpg"
                   width="270"
@@ -150,16 +181,13 @@
                   alt="a man wearing glasses"
                 />
                 <figcaption>
-                  <b>John Doe</b> <br />
-                  Product Designer
+                  <h3>John Doe</h3>
+                  <p>Product Designer</p>
                 </figcaption>
               </figure>
-            </div>
-          </li>
-
-          <li>
-            <div>
-              <figure>
+            </li>
+            <li class="pic-item">
+              <figure class="picture">
                 <img
                   src="images/team-photo-2.jpg"
                   width="270"
@@ -167,16 +195,13 @@
                   alt="an elegant blond lady wearing glasses smiling"
                 />
                 <figcaption>
-                  <b>John Doe</b> <br />
-                  Frontend Developer
+                  <h3>John Doe</h3>
+                  <p>Frontend Developer</p>
                 </figcaption>
               </figure>
-            </div>
-          </li>
-
-          <li>
-            <div>
-              <figure>
+            </li>
+            <li class="pic-item">
+              <figure class="picture">
                 <img
                   src="images/team-photo-3.jpg"
                   width="270"
@@ -184,44 +209,46 @@
                   alt="a young man wearing shirt smiling"
                 />
                 <figcaption>
-                  <b>John Doe</b> <br />
-                  Marketing
+                  <h3>John Doe</h3>
+                  <p>Marketing</p>
                 </figcaption>
               </figure>
-            </div>
-          </li>
-
-          <li>
-            <div>
-              <figure>
+            </li>
+            <li class="pic-item">
+              <figure class="picture">
                 <img
                   src="images/team-photo-4.jpg"
                   width="270"
                   height="260"
                   alt="a man wearing glasses in a black t-shirt"
                 />
-                <figcaption><b>John Doe</b> <br />UI Designer</figcaption>
+                <figcaption>
+                  <h3>John Doe</h3>
+                  <p>UI Designer</p>
+                </figcaption>
               </figure>
-            </div>
-          </li>
-        </ul>
-      </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer>
+
+    <footer class="footer-container">
       <div>
         <a href="#" class="logo">Webstudio</a>
-        <ul class="footer-items">
-          <li>
-            <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-          </li>
-          <li>
-            <a href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li>
-            <a href="tel:+48111111111">+48 111 111 111</a>
-          </li>
-        </ul>
       </div>
+
+      <ul class="footer-items">
+        <li>
+          <address>m. Warszawa, Aleje Jerozolimskie 21</address>
+        </li>
+        <li>
+          <a href="mailto:info@example.com">info@example.com</a>
+        </li>
+        <li>
+          <a href="tel:+48111111111">+48 111 111 111</a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

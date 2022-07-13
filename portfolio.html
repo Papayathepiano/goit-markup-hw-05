@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio Homework Project</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -22,10 +22,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    
   </head>
   <body class="position">
-    <header class="nav-bar">
+    <!-- <header class="nav-bar">
       <div class="menu-items">
         <div>
           <nav class="menu-items">
@@ -58,10 +57,36 @@
           </ul>
         </div>
       </div>
+    </header> -->
+    <header class="nav-bar">
+      <div class="menu-items">
+        <a class="logo-position logo" href="index.html">Webstudio</a>
+        <nav class="menu-items social-links-position">
+          <ul class="nav-items">
+            <li class="nav-1"><a href="#" class="menu-item">Agencja</a></li>
+            <li class="nav-2">
+              <a href="portfolio.html" class="menu-item">Portfolio</a>
+            </li>
+            <li><a href="#" class="menu-item">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="menu-items contacts-position">
+          <li class="nav-3">
+            <a href="mailto:info@devstudio.com" class="contact-info"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="contact-info"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <main class="card-container">
-      <div class="button-box">
+    <main class="filter-container">
+      <div class="container">
         <ul class="button-container">
           <li><button type="button" class="button">Wszystkie</button></li>
           <li><button type="button" class="button">Strony</button></li>
@@ -71,153 +96,154 @@
         </ul>
       </div>
 
-      <section class="image-box-container">
-        <ul class="image-box">
-          <li>
-            <div>
-              <figure>
-                <img
-                  src="images/technocrack-1.jpg"
-                  width="370"
-                  height="294"
-                  alt="Graphical user interface, website"
-                />
-                <figcaption>
-                  <b>Technocrack</b> <br />Strona internetowa
-                </figcaption>
-              </figure>
-            </div>
+      <div>
+        <ul class="image-box-container">
+          <li class="item">
+            <figure class="poster">
+              <img
+                src="images/technocrack-1.jpg"
+                width="370"
+                height="294"
+                alt="Graphical user interface, website"
+              />
+              <figcaption>
+                <p class="fig-cap">Technocrack</p>
+                <p class="fig-cap-secondary">Strona internetowa</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <div>
-              <figure>
-                <img
-                  src="images/basketball-1.jpg"
-                  width="370"
-                  height="294"
-                  alt="A couple of men playing basketball"
-                />
-                <figcaption>
-                  <b>Grafika New Orlean vs Golden Star</b> <br />Dizajn
-                </figcaption>
-              </figure>
-            </div>
+          <li class="item">
+            <figure class="poster">
+              <img
+                src="images/basketball-1.jpg"
+                width="370"
+                height="294"
+                alt="A couple of men playing basketball"
+              />
+              <figcaption>
+                <p class="fig-cap">Grafika New Orlean vs Golden Star</p>
+                <p class="fig-cap-secondary">Dizajn</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <div>
-              <figure>
-                <img
-                  src="images/seafood-1.jpg"
-                  width="370"
-                  height="294"
-                  alt="Seafood restaurant logo, fish"
-                />
-                <figcaption>
-                  <b>Restauracja Seafood</b> <br />Aplikacja
-                </figcaption>
-              </figure>
-            </div>
+          <li class="item">
+            <figure class="poster">
+              <img
+                src="images/seafood-1.jpg"
+                width="370"
+                height="294"
+                alt="Seafood restaurant logo, fish"
+              />
+              <figcaption>
+                <p class="fig-cap">Restauracja Seafood</p>
+                <p class="fig-cap-secondary">Aplikacja</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <div>
-              <figure>
-                <img
-                  src="images/headphones-1.jpg"
-                  width="370"
-                  height="294"
-                  alt="Headphones"
-                />
-                <figcaption><b>Projekt Prime</b> <br />Marketing</figcaption>
-              </figure>
-            </div>
+          <li class="item">
+            <figure class="poster">
+              <img
+                src="images/headphones-1.jpg"
+                width="370"
+                height="294"
+                alt="Headphones"
+              />
+              <figcaption>
+                <p class="fig-cap">Projekt Prime</p>
+                <p class="fig-cap-secondary">Marketing</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <div>
-              <figure>
-                <img
-                  src="images/blocks-1.jpg"
-                  width="370"
-                  height="294"
-                  alt="A picture containing engineering drawing"
-                />
-                <figcaption><b>Projekt Boxes</b> <br />Aplikacja</figcaption>
-              </figure>
-            </div>
+          <li class="item">
+            <figure class="poster">
+              <img
+                src="images/blocks-1.jpg"
+                width="370"
+                height="294"
+                alt="A picture containing engineering drawing"
+              />
+              <figcaption>
+                <p class="fig-cap">Projekt Boxes</p>
+                <p class="fig-cap-secondary">Aplikacja</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <div>
-              <figure>
-                <img
-                  src="images/monitor-1.jpg"
-                  width="370"
-                  height="294"
-                  alt="A picture containing text, electronics, monitor, display"
-                />
-                <figcaption>
-                  <b>Inspiration has no Borders</b> <br />Strona internetowa
-                </figcaption>
-              </figure>
-            </div>
+          <li class="item">
+            <figure class="poster">
+              <img
+                src="images/monitor-1.jpg"
+                width="370"
+                height="294"
+                alt="A picture containing text, electronics, monitor, display"
+              />
+              <figcaption>
+                <p class="fig-cap">Inspiration has no Borders</p>
+                <p class="fig-cap-secondary">Strona internetowa</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <div>
-              <figure>
-                <img
-                  src="images/magazine-1.jpg"
-                  width="370"
-                  height="294"
-                  alt="Magazine"
-                />
-                <figcaption>
-                  <b>Magazyn Limited Edition</b> <br />Dizajn
-                </figcaption>
-              </figure>
-            </div>
+          <li class="item">
+            <figure class="poster">
+              <img
+                class="poster-position"
+                src="images/magazine-1.jpg"
+                width="370"
+                height="294"
+                alt="Magazine"
+              />
+              <figcaption>
+                <p class="fig-cap">Magazyn Limited Edition</p>
+                <p class="fig-cap-secondary">Dizajn</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <div>
-              <figure>
-                <img
-                  src="images/label-tag-1.jpg"
-                  width="370"
-                  height="294"
-                  alt="Label tag"
-                />
-                <figcaption><b>Projekt LAB</b> <br />Marketing</figcaption>
-              </figure>
-            </div>
+          <li class="item">
+            <figure class="poster">
+              <img
+                src="images/label-tag-1.jpg"
+                width="370"
+                height="294"
+                alt="Label tag"
+              />
+              <figcaption>
+                <p class="fig-cap">Projekt LAB</p>
+                <p class="fig-cap-secondary">Marketing</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <div>
-              <figure>
-                <img
-                  src="images/person-typing-1.jpg"
-                  width="370"
-                  height="294"
-                  alt="person typing"
-                />
-                <figcaption><b>Growing Business</b> <br />Aplikacja</figcaption>
-              </figure>
-            </div>
+          <li class="item">
+            <figure class="poster">
+              <img
+                src="images/person-typing-1.jpg"
+                width="370"
+                height="294"
+                alt="person typing"
+              />
+              <figcaption>
+                <p class="fig-cap">Growing Business</p>
+                <p class="fig-cap-secondary">Aplikacja</p>
+              </figcaption>
+            </figure>
           </li>
         </ul>
       </div>
     </main>
-    <footer>
+    <footer class="footer-container">
       <div>
         <a href="#" class="logo">Webstudio</a>
-        <ul class="footer-items">
-          <li>
-            <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-          </li>
-          <li>
-            <a href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li>
-            <a href="+48111111111 ">+48 111 111 111</a>
-          </li>
-        </ul>
-      </section>
+      </div>
+
+      <ul class="footer-items">
+        <li>
+          <address>m. Warszawa, Aleje Jerozolimskie 21</address>
+        </li>
+        <li>
+          <a href="mailto:info@example.com">info@example.com</a>
+        </li>
+        <li>
+          <a href="tel:+48111111111">+48 111 111 111</a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
