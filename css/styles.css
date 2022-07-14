@@ -21,6 +21,7 @@
   --secondary-background-color: #2f303a;
   --button-color: #f5f4fa;
   --border-color: #ececec;
+  --fig-cap-grey: ;
 }
 
 body {
@@ -62,6 +63,7 @@ ul {
 .nav-items {
   display: flex;
   color: var(--normal-text-color);
+  font-size: 14px;
 }
 
 .logo {
@@ -74,6 +76,13 @@ ul {
   color: var(--link-color);
 }
 
+span {
+  color: var(--normal-text-color);
+}
+
+.footer-span {
+  color: var(--white);
+}
 .logo-position {
   width: 145px;
   height: 31px;
@@ -87,7 +96,7 @@ ul {
 }
 
 .contacts-position {
-  padding-left: 372px;
+  margin-left: 372px;
 }
 
 .nav-1 {
@@ -107,6 +116,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--normal-text-color);
 }
 .contact-info {
   font-style: normal;
@@ -156,7 +166,7 @@ a::after {
 }
 
 .main-section {
-  height: 700px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,8 +225,6 @@ button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.36;
-
-  text-align: center;
   letter-spacing: 0.06em;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -226,12 +234,9 @@ button {
   color: var(--white);
 }
 
-.button-text {
-  padding: 11px 41px 9px 42px;
-}
-
-.my-team {
+.our-team {
   background-color: var(--button-color);
+  margin-top: 92px;
 }
 
 .pics-container {
@@ -382,7 +387,7 @@ address {
 
 .fig-cap-secondary {
   box-sizing: border-box;
-  color: rgb(117, 117, 117);
+  color: var(--paragraph-text-color);
   display: block;
   font-size: 16px;
   font-style: normal;
