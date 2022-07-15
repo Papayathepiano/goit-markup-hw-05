@@ -263,8 +263,8 @@ button {
   width: 1200px;
   background-color: var(--button-color);
   padding-bottom: 98px;
-  margin-left: 215px;
-  margin-right: 215px;
+  /* margin-left: 215px;
+  margin-right: 215px; */
 
   text-align: center;
   display: flex;
@@ -423,10 +423,8 @@ figure {
 }
 
 .footer-container {
-  padding-left: 215px;
-  padding-right: 215px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   justify-content: center;
   flex-direction: column;
