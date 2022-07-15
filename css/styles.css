@@ -26,7 +26,7 @@
   --secondary-background-color: #2f303a;
   --button-color: #f5f4fa;
   --border-color: #ececec;
-  --fig-cap-grey: ;
+  --contacts: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -169,7 +169,6 @@ a::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background: var(--secondary-background-color);
 }
 
@@ -265,9 +264,9 @@ button {
 }
 
 .picture figcaption {
-  padding-top: 27px;
+  /* padding-top: 27px;
   padding-bottom: 27px;
-  box-sizing: border-box;
+  box-sizing: border-box; */
 }
 
 .team-container {
@@ -315,16 +314,19 @@ button {
   width: 1200px;
   /* margin-left: 215px;
   margin-right: 215px; */
-  margin-top: 94px;
+  padding-top: 94px;
+  justify-content: space-around;
+  gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .paragraph-text {
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
-
   color: var(--paragraph-text-color);
+  padding-top: 10px;
 }
 
 /* .nav-button {
@@ -335,16 +337,16 @@ footer {
   background-color: var(--secondary-background-color);
 }
 
-.footer-items a {
-  color: var(--white);
-}
-
 address {
   font-style: normal;
   color: var(--white);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.contacts {
+  color: var(--contacts);
 }
 
 /* Portfolio: */
@@ -377,52 +379,47 @@ figure {
 }
 
 .fig-cap {
-  box-sizing: border-box;
-  display: block;
-  font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  letter-spacing: 1.08px;
-  line-height: calc(36 / 18);
-  list-style-image: none;
-  list-style-position: outside;
-  list-style-type: none;
-  margin-block-end: 15px;
-  margin-block-start: 15px;
-  margin-bottom: 15px;
-  margin-inline-end: 15px;
-  margin-inline-start: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 15px;
-  tab-size: 4;
-  text-align: left;
-  text-size-adjust: 100%;
+  font-size: 18px;
+  line-height: 2;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 24px;
+  color: var(--normal-text-color);
+  letter-spacing: 0.06em;
 }
 
 .fig-cap-secondary {
-  box-sizing: border-box;
   color: var(--paragraph-text-color);
-  display: block;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0.48px;
-  line-height: calc(30 / 16);
-  list-style-image: none;
-  list-style-position: outside;
-  list-style-type: none;
-  margin-block-end: 15px;
-  margin-block-start: 15px;
-  margin-bottom: 15px;
-  margin-inline-end: 15px;
-  margin-inline-start: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 15px;
-  tab-size: 4;
-  text-align: left;
-  text-size-adjust: 100%;
+  line-height: 1.9;
+  margin: 0;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  color: var(--paragraph-text-color);
+  letter-spacing: 0.03em;
+}
+
+.name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--normal-text-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.job {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--paragraph-text-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding-bottom: 16px;
 }
 
 .item {
