@@ -9,6 +9,11 @@
 
 * {
   box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -42,6 +47,9 @@ ul {
   padding: 0;
 }
 
+figure {
+  margin: 0 auto;
+}
 .nav-bar {
   border-bottom: 1px solid var(--border-color);
   background-color: var(--white);
@@ -151,10 +159,12 @@ a::after {
   text-transform: uppercase;
   background: var(--secondary-background-color);
   color: var(--white);
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 
 .main-section {
-  height: 600px;
+  /* height: 600px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -219,6 +229,7 @@ button {
   width: 200px;
   height: 50px;
   color: var(--white);
+  margin-bottom: 197px;
 }
 
 .our-team {
@@ -353,10 +364,16 @@ figure {
 }
 
 .image-box-container {
-  display: grid;
+  /* display: grid;
   grid-gap: 30px;
   justify-content: center;
-  grid-template-columns: repeat(3, calc(33.33% - 30px));
+  grid-template-columns: repeat(3, calc(33.33% - 30px)); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  gap: 30px;
 }
 
 .fig-cap {
@@ -420,6 +437,7 @@ figure {
   border: 1px solid #eeeeee;
   /* margin: 0;
   padding: 0; */
+  margin: 0 auto;
 }
 
 .footer-container {
