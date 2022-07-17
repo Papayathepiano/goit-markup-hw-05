@@ -222,7 +222,6 @@ button {
   flex-wrap: wrap;
   gap: 30px;
   width: 1200px;
-  padding-bottom: 89px;
 }
 
 .picture {
@@ -236,15 +235,13 @@ button {
   padding: 0;
 }
 
-.our-team-background {
+.third {
   background-color: var(--button-color);
 }
 
 .team-container {
   width: 1200px;
   background-color: var(--button-color);
-  padding-bottom: 133px;
-
   text-align: center;
   display: flex;
   gap: 30px;
@@ -258,7 +255,7 @@ button {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 92px;
+  padding-top: 0px;
   padding-bottom: 50px;
   margin: 0px;
 }
@@ -328,6 +325,10 @@ figure {
 
 .section {
   padding: 94px 0 94px 0px;
+}
+
+.second {
+  padding-top: 0;
 }
 
 .filter-container {
