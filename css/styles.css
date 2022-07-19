@@ -152,7 +152,7 @@ a::after {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background: var(--secondary-background-color);
+  /* background: var(--secondary-background-color); */
   color: var(--white);
   padding-top: 200px;
   padding-bottom: 30px;
@@ -164,6 +164,8 @@ a::after {
   justify-content: center;
   align-items: center;
   background: var(--secondary-background-color);
+  background-image: url(https://github.com/Papayathepiano/goit-markup-hw-04/blob/main/images/background.jpg?raw=true);
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 button {
@@ -419,3 +421,21 @@ figure {
   line-height: calc(24 / 14);
   gap: 9px;
 }
+
+/* Icons */
+/* 
+.icon {
+  display: inline-flex;
+  height:;
+  width:;
+  border-radius:;
+  border: px solid color:;
+  background-size:;
+}
+
+.with-bg {
+background-color:}
+
+.with-icon {
+  background-image: url();
+} */
