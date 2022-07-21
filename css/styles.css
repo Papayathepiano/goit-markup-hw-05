@@ -27,6 +27,8 @@
   --button-color: #f5f4fa;
   --border-color: #ececec;
   --contacts: rgba(255, 255, 255, 0.6);
+  --icons: #afb1b8;
+  --background: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -85,9 +87,6 @@ span {
   color: var(--normal-text-color);
 }
 
-.footer-span {
-  color: var(--white);
-}
 .logo-position {
   width: 145px;
   height: 31px;
@@ -99,7 +98,7 @@ span {
 
 .contacts-position {
   padding-left: 372px;
-  gap: 51px;
+  gap: 30px;
 }
 
 .menu-item {
@@ -119,12 +118,10 @@ span {
   color: var(--paragraph-text-color);
 }
 
-/* unvisited link */
 a:link {
   text-decoration: none;
 }
 
-/* visited link */
 a:visited {
   text-decoration: none;
 }
@@ -134,7 +131,6 @@ a::after,
 a::before {
   color: var(--normal-text-color);
 }
-/* mouse over link */
 
 a:hover,
 a:focus,
@@ -152,7 +148,6 @@ a::after {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* background: var(--secondary-background-color); */
   color: var(--white);
   padding-top: 200px;
   padding-bottom: 30px;
@@ -164,8 +159,12 @@ a::after {
   justify-content: center;
   align-items: center;
   background: var(--secondary-background-color);
-  background-image: url(https://github.com/Papayathepiano/goit-markup-hw-04/blob/main/images/background.jpg?raw=true);
-  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.jpg);
 }
 
 button {
@@ -190,6 +189,8 @@ button {
 .button:focus {
   background-color: var(--link-color);
   color: var(--white);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .button-container {
@@ -299,10 +300,6 @@ button {
   padding-top: 10px;
 }
 
-footer {
-  background-color: var(--secondary-background-color);
-}
-
 address {
   font-style: normal;
   color: var(--white);
@@ -405,10 +402,27 @@ figure {
   margin: 0 auto;
 }
 
+.poster:hover,
+.poster:focus {
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--secondary-background-color);
+}
+
+.footer-span {
+  color: var(--white);
+}
+
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
+  display: block;
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
@@ -422,20 +436,138 @@ figure {
   gap: 9px;
 }
 
-/* Icons */
-/* 
-.icon {
-  display: inline-flex;
-  height:;
-  width:;
-  border-radius:;
-  border: px solid color:;
-  background-size:;
+.footer-box {
+  display: flex;
+  justify-items: flex-start;
 }
 
-.with-bg {
-background-color:}
+.join-us {
+  display: flex;
+  margin-right: 648px;
+  margin-left: 70px;
+}
 
-.with-icon {
-  background-image: url();
-} */
+.invite {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  padding-bottom: 20px;
+  padding-top: 12px;
+}
+
+.footer-sm {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 10px;
+  fill: var(--white);
+}
+
+.footer-sm-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+}
+
+.footer-sm-circle:hover {
+  background-color: var(--link-color);
+  cursor: pointer;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.link-icon:hover {
+  color: var(--link-color);
+}
+
+.contact-icon svg:hover {
+  fill: var(--link-color);
+}
+
+.link-icon {
+  cursor: pointer;
+  fill: var(--paragraph-text-color);
+  display: inline-flex;
+  margin-right: 10px;
+  align-self: center;
+}
+
+.icon-bg {
+  background-color: var(--button-color);
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.sm-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-circle {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white);
+  padding: 12px;
+  fill: var(--icons);
+}
+
+.icon-circle:not(:last-child) {
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.icon-circle:hover .social-icon {
+  fill: var(--white);
+  cursor: pointer;
+}
+.icon-circle:hover {
+  background-color: var(--link-color);
+  cursor: pointer;
+  fill: var(--white);
+}
+
+.filler {
+  color: var(--white);
+}
+.our-clients {
+  display: flex;
+  justify-content: center;
+}
+
+.client-area {
+  display: flex;
+  border: solid var(--icons) 1px;
+  border-radius: 4px;
+  width: 172px;
+  height: 92px;
+  justify-content: center;
+}
+
+.client-area:not(:last-child) {
+  margin-right: 30px;
+}
+.client-container {
+  display: flex;
+  width: 106px;
+  height: 60px;
+  justify-content: center;
+  align-self: center;
+}
+
+.client-icon {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  fill: var(--paragraph-text-color);
+}
