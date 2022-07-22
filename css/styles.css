@@ -114,8 +114,13 @@ span {
   font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.02em;
-
+  fill: var(--paragraph-text-color);
   color: var(--paragraph-text-color);
+}
+
+.contact-info:hover {
+  fill: var(--link-color);
+  color: var(--link-color);
 }
 
 a:link {
@@ -479,24 +484,22 @@ footer {
   cursor: pointer;
 }
 
-.contact-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
 .link-icon:hover {
-  color: var(--link-color);
+  fill: var(--link-color);
 }
 
-.contact-icon svg:hover {
+.contact-icon svg:hover,
+.contact-icon svg:focus {
   fill: var(--link-color);
+}
+
+.contact-icon a:hover,
+.contact-icon a:focus {
+  color: var(--link-color);
 }
 
 .link-icon {
   cursor: pointer;
-  fill: var(--paragraph-text-color);
   display: inline-flex;
   margin-right: 10px;
   align-self: center;
@@ -552,6 +555,11 @@ footer {
   width: 172px;
   height: 92px;
   justify-content: center;
+  cursor: pointer;
+}
+
+.client-area:hover {
+  border-color: var(--link-color);
 }
 
 .client-area:not(:last-child) {
