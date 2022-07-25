@@ -556,10 +556,12 @@ footer {
   height: 92px;
   justify-content: center;
   cursor: pointer;
+  fill: #afb1b8;
 }
 
 .client-area:hover {
   border-color: var(--link-color);
+  fill: var(--link-color);
 }
 
 .client-area:not(:last-child) {
@@ -577,5 +579,5 @@ footer {
   display: flex;
   justify-content: center;
   align-self: center;
-  fill: var(--paragraph-text-color);
+  color: #afb1b8;
 }
