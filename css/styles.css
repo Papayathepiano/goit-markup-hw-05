@@ -206,7 +206,7 @@ a.active::after {
   pointer-events: none;
 }
 
-.modal-box {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
