@@ -52,6 +52,7 @@ ul {
 figure {
   margin: 0 auto;
 }
+
 .nav-bar {
   border-bottom: 1px solid var(--border-color);
   background-color: var(--white);
@@ -109,6 +110,7 @@ span {
   color: var(--normal-text-color);
   position: relative;
 }
+
 .contact-info {
   font-style: normal;
   font-weight: 500;
@@ -164,7 +166,6 @@ a.active::after {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -195,8 +196,7 @@ a.active::after {
   height: 100%;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms, visibility 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.25s visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -204,6 +204,7 @@ a.active::after {
   visibility: hidden;
   pointer-events: none;
 }
+
 .modal-box {
   position: relative;
   top: 50%;
@@ -243,6 +244,7 @@ a.active::after {
   transition: background 0.25s color 0.25s box-shadow 0.25s
     cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 button {
   font-style: normal;
   font-weight: 500;
@@ -492,6 +494,7 @@ figure {
   padding: 0;
   width: auto;
 }
+
 .poster {
   width: 370px;
   height: 404px;
@@ -516,6 +519,7 @@ figure {
   padding-top: 49px;
   padding-left: 24px;
 }
+
 .poster:hover .card-overlay {
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(0);
@@ -535,6 +539,7 @@ figure {
   letter-spacing: 0.03em;
   color: var(--white);
 }
+
 .poster:hover,
 .poster:focus {
   box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -665,11 +670,13 @@ footer {
   margin-right: 10px;
   margin-bottom: 30px;
 }
+
 .icon-circle:hover .social-icon {
   fill: var(--white);
   cursor: pointer;
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .icon-circle:hover,
 .icon-circle:focus {
   background-color: var(--link-color);
@@ -681,6 +688,7 @@ footer {
 .filler {
   color: var(--white);
 }
+
 .our-clients {
   display: flex;
   justify-content: center;
@@ -694,7 +702,7 @@ footer {
   height: 92px;
   justify-content: center;
   cursor: pointer;
-  fill: #afb1b8;
+  fill: var(--icons);
 }
 
 .client-area:hover,
@@ -707,6 +715,7 @@ footer {
 .client-area:not(:last-child) {
   margin-right: 30px;
 }
+
 .client-container {
   display: flex;
   width: 106px;
@@ -719,5 +728,5 @@ footer {
   display: flex;
   justify-content: center;
   align-self: center;
-  color: #afb1b8;
+  color: var(--icons);
 }
