@@ -196,7 +196,8 @@ a.active::after {
   height: 100%;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 0.25s visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.25s visibility 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
