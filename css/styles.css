@@ -188,7 +188,7 @@ a.active::after {
     url(../images/background.jpg);
 }
 
-.mw-backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
