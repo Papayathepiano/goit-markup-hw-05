@@ -674,7 +674,7 @@ footer {
   background-color: var(--link-color);
   cursor: pointer;
   fill: var(--white);
-  transition: background 0.25s fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filler {
