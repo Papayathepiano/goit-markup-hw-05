@@ -200,12 +200,6 @@ a.active::after {
     cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -728,4 +722,10 @@ footer {
   justify-content: center;
   align-self: center;
   color: var(--icons);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
