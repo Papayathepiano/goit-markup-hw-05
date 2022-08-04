@@ -119,13 +119,14 @@ span {
   letter-spacing: 0.02em;
   fill: var(--paragraph-text-color);
   color: var(--paragraph-text-color);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-info:hover,
 .contact-info:focus {
   fill: var(--link-color);
   color: var(--link-color);
-  transition: color 0.25s fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:link {
@@ -140,6 +141,7 @@ a:active,
 a::after,
 a::before {
   color: var(--normal-text-color);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:hover,
@@ -147,7 +149,6 @@ a:focus,
 a::before,
 a::after {
   color: var(--link-color);
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a.active::after {
@@ -155,7 +156,7 @@ a.active::after {
   position: absolute;
   left: 0;
   right: 0;
-  top: 42.5px;
+  top: 45px;
   background: var(--link-color);
   height: 4px;
   border-radius: 10px 10px 10px 10px;
@@ -196,7 +197,8 @@ a.active::after {
   height: 100%;
   z-index: 3;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 0.25s visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -227,14 +229,15 @@ a.active::after {
   justify-content: center;
   padding: 0.5em;
   line-height: 0px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) box-shadow 0.25s
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .exit:hover,
 .exit:focus {
+  transform: scale(1.05);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: scale 0.25s box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(1.5);
 }
 
 button {
@@ -252,6 +255,9 @@ button {
   border: none;
   border-style: none;
   cursor: pointer;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -260,8 +266,6 @@ button {
   color: var(--white);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: background-color 0.25s color 0.25s box-shadow 0.25s
-    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-container {
@@ -495,6 +499,14 @@ figure {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.poster:hover,
+.poster:focus {
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .portfolio-img {
@@ -530,14 +542,6 @@ figure {
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--white);
-}
-
-.poster:hover,
-.poster:focus {
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Footer */
@@ -603,31 +607,30 @@ footer {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 12px;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-sm-circle:hover,
 .footer-sm-circle:focus {
   background-color: var(--link-color);
   cursor: pointer;
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-icon:hover,
-.link-icon:focus {
-  fill: var(--link-color);
+.contact-icon svg {
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .contact-icon svg:hover,
 .contact-icon svg:focus {
   fill: var(--link-color);
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-icon a {
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-icon a:hover,
 .contact-icon a:focus {
   color: var(--link-color);
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-icon {
@@ -635,6 +638,12 @@ footer {
   display: inline-flex;
   margin-right: 10px;
   align-self: center;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-icon:hover,
+.link-icon:focus {
+  fill: var(--link-color);
 }
 
 .icon-bg {
@@ -656,6 +665,8 @@ footer {
   background-color: var(--white);
   padding: 12px;
   fill: var(--icons);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-circle:not(:last-child) {
@@ -663,18 +674,11 @@ footer {
   margin-bottom: 30px;
 }
 
-.icon-circle:hover .social-icon {
-  fill: var(--white);
-  cursor: pointer;
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .icon-circle:hover,
 .icon-circle:focus {
   background-color: var(--link-color);
   cursor: pointer;
   fill: var(--white);
-  transition: background-color 0.25s fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filler {
@@ -695,13 +699,14 @@ footer {
   justify-content: center;
   cursor: pointer;
   fill: var(--icons);
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-area:hover,
 .client-area:focus {
   border-color: var(--link-color);
   fill: var(--link-color);
-  transition: border 0.25s fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-area:not(:last-child) {
