@@ -499,7 +499,9 @@ figure {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .poster:hover,
@@ -522,12 +524,13 @@ figure {
   transform: translateY(100%);
   padding-top: 49px;
   padding-left: 24px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .poster:hover .card-overlay {
-  background: rgba(33, 150, 243, 0.9);
+  background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(0);
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-cap {
