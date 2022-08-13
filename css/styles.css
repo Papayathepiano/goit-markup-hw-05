@@ -525,7 +525,7 @@ figure {
   padding-top: 49px;
   padding-left: 24px;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .poster:hover .card-overlay {
